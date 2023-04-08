@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buildnship</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+		fetch('product.json')
+			.then(response => response.json())
+			.then(data => {
+				const cardSection = document.querySelector('.cards-section .cards');
+				data.forEach(product => {
+					const card = document.createElement('div');
+					card.classList.add('card');
+					card.innerHTML = `
+						<div class="card-image">
+							<img src="${product.image}" alt="${product.title}">
+						</div>
+						<div class="card-content">
+							<h2>${product.title}</h2>
+							<p>${product.description}</p>
+							<a href="${product.link}" class="view-product-btn">View Product</a>
+						</div>
+					`;
+					cardSection.appendChild(card);
+				});
+			})
+			.catch(error => console.error('Error fetching product data:', error));
+
+	</script>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#">Buildnship</a>
+			</div>
+			<div class="join-discord">
+				<a href="#">Join Github</a>
+			</div>
+		</nav>
+	</header>
+	<div class="landing-section">
+        <section class="landing">
+          <div class="landing-text">
+            <h1>Welcome to Buildnship</h1>
+            <p>Here you can find everything you need to build and ship your projects.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+          </div>
+          <div class="landing-image">
+            <img src="images/landing.png" alt="Landing Image">
+          </div>
+        </section>
+      </div>
+      
+      <div class="cards-section">
+		<h1 class="cards-heading">Our Products</h1>
+		<section class="cards">
+		</section>
+	</div>
+      <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2023 Buildnship. All rights reserved.</p>
+    </footer>
+    
+      
+      
+	
+</body>
+</html>
