@@ -90,6 +90,8 @@ display: block;
 max-width: 100%;
 height: auto;
 margin-bottom: 10px;
+border-radius:10px;
+box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3), 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 .card-content {
@@ -101,8 +103,8 @@ justify-content: space-between;
 .card h2 {
 	font-size: 24px;
 	font-weight: bold;
-	margin-bottom: 13px;
-	color: #b1a5a5;
+	margin-bottom: 1px;
+	color:white;
 	padding: 10px;
 }
 
