@@ -221,17 +221,16 @@ color: #cc0a13; /* gmail */
   }
 
   footer {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
   }
   
   footer img {
-    margin-bottom: 10px;
     max-width: 100%;
+    justify-content: end;
+
   }
   
   .social-icons {
-    margin-top: 10px;
     text-align: center;
   }
 }
@@ -271,7 +270,19 @@ color: #cc0a13; /* gmail */
     font-size: 12px;
   }
 
+  footer {
+    flex-direction: row;
+    padding: 0 18px;
+  }
+  footer img {
+    max-width: 68%;
+    margin-top: 10px;
+    margin-left: -10px;
+
+  }
+
    .social-icons a {
-    font-size: 20px;
+    font-size: 12px;
+    margin: 0px;
   }
 }
