@@ -10,6 +10,13 @@
       "image": "images/idfy.png",
       "description": "IDfy is a simple and easy tool that generates unique ID for your app",
       "link": "https://idfy.buildnship.in/"
+    },
+      {
+      "title": "Mail Man",
+      "image": "images/mailman.png",
+      "description": "A user-friendly platform that simplifies sending bulk emails with attachments while providing comprehensive reporting.",
+      "link": "https://mailman.buildnship.in/"
     }
+    
     
   ]
