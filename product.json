@@ -1,22 +1,27 @@
 [
     {
       "title": "SQLEASE",
-      "image": "images/sqlease.jpg",
+      "image": "images/products/sqlease.jpg",
       "description": "With this tool, you can generate SQL queries based on the requirements you specify in English",
       "link": "https://sqlease.buildnship.in/ "
     },
     {
       "title": "IDFY",
-      "image": "images/idfy.png",
+      "image": "images/products/idfy.png",
       "description": "IDfy is a simple and easy tool that generates unique ID for your app",
       "link": "https://idfy.buildnship.in/"
     },
       {
       "title": "Mail Man",
-      "image": "images/mailman.png",
+      "image": "images/products/mailman.png",
       "description": "A user-friendly platform that simplifies sending bulk emails with attachments while providing comprehensive reporting.",
       "link": "https://mailman.buildnship.in/"
+    },
+    {
+      "title": "Flames Matcher",
+      "image": "images/products/flames.png",
+      "description": "Flames Calculator?🔥 Classic 90s Indian love-tester! ❤️ Names in, and... Friends or Frenemies? Save the best fails. Drama? Blame the calc!🎉",
+      "link": "https://flames.buildnship.in/"
     }
-    
     
   ]
