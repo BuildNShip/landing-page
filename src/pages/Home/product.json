@@ -22,5 +22,11 @@
     "image": "/flames.png",
     "description": "Flames Calculator?🔥 Classic 90s Indian love-tester! ❤️ Names in, and... Friends or Frenemies? Save the best fails. Drama? Blame the calc!🎉",
     "link": "https://flames.buildnship.in/"
+  },
+  {
+    "title": "Shutr",
+    "image": "/shutr.png",
+    "description": "Shutr lets you peek behind the lens! Upload a photo, and Shutr instantly reveals all the juicy EXIF details—like camera settings and location—right on your screen. Snap, upload, discover!",
+    "link": "https://shutr.buildnship.in/"
   }
 ]
